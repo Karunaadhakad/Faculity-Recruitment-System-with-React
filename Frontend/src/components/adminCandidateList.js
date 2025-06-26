@@ -53,7 +53,7 @@ function AdminCandidateList(){
     </thead>
     <tbody>
 {
-    Array.isArray(candidateDataList).candidateDataList.map((candidate,index) => {
+    Array.isArray(candidateDataList)&&candidateDataList.map((candidate,index) => {
         return(<tr>
                 <td>{index+1}</td>
                 <td>{candidate.name}</td>
